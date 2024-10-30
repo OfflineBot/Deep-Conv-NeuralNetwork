@@ -5,8 +5,6 @@ use crate::network::{Activation, FullyConnected};
 use super::fully_connected::relu;
 
 
-
-
 impl FullyConnected {
     pub fn forward(&mut self, x: &Array2<f32>) {
         let z1 = &x.dot(&self.weight) + &self.bias;
